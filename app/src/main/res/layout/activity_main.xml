@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/textAppDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="@string/text_appDescription"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAppDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="Number"
+        android:textAlignment="center"
+        android:textColor="@color/google_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/childLayoutAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNumber"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonIncrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increment" />
+
+        <Button
+            android:id="@+id/buttonDecrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Decrement" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/childLayoutAlpha"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonIncrementBy10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increment By 10 with Loop" />
+
+        <Button
+            android:id="@+id/buttonDecrementBy10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrement by 10 with Loop" />
+    </LinearLayout>
+</RelativeLayout>

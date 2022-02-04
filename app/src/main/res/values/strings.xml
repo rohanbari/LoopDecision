@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoopDecision</string>
+    <string name="text_appDescription">This application demonstrates how to work with the conditional and loop syntaxes. Click the buttons below to test the app!</string>
+</resources>
